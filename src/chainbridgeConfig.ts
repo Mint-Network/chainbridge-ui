@@ -1,4 +1,4 @@
-import ETHIcon from "./media/tokens/eth.svg";
+//import ETHIcon from "./media/tokens/eth.svg";
 import WETHIcon from "./media/tokens/weth.svg";
 
 export type TokenConfig = {
