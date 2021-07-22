@@ -113,6 +113,7 @@ chains: [
                     imageUri: WETHIcon,
                     resourceId:
                     "0x000000000000000000000000000000c76ebe4a02bbc34786d860b355f5a5ce00",
+                    isNativeWrappedToken: true,
                 },
             ],
         },
