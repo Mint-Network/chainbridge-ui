@@ -48,11 +48,56 @@ export type ChainbridgeConfig = {
 };
 
 export const chainbridgeConfig: ChainbridgeConfig = {
-  // Local GETH <> Local Substrate
- chains: [
-        {
+// Local GETH <> Local Substrate
+//chains: [
+// {
+//   chainId: 0,
+//   networkId: 5,
+//   name: "Ethereum - Local",
+//   decimals: 18,
+//   bridgeAddress: "0x62877dDCd49aD22f5eDfc6ac108e9a4b5D2bD88B",
+//   erc20HandlerAddress: "0x3167776db165D8eA0f51790CA2bbf44Db5105ADF",
+//   rpcUrl: "http://localhost:8545",
+//   type: "Ethereum",
+//   nativeTokenSymbol: "ETH",
+//   tokens: [
+//     {
+//       address: "0x21605f71845f372A9ed84253d2D024B7B10999f4",
+//       name: "TOKEN",
+//       symbol: "TOKEN",
+//       imageUri: ETHIcon,
+//       resourceId:
+//         "0x000000000000000000000000000000c76ebe4a02bbc34786d860b355f5a5ce00",
+//     },
+//   ],
+// },
+// {
+//   chainId: 1,
+//   networkId: 2,
+//   name: "Substrate - Local",
+//   decimals: 18,
+//   rpcUrl: "ws://localhost:9944",
+//   type: "Substrate",
+//   nativeTokenSymbol: "DOT",
+//   chainbridgePalletName: "chainBridge",
+//   bridgeFeeFunctionName: "tokenTransferFee",
+//   transferPalletName: "example",
+//   transferFunctionName: "transferNative",
+//   typesFileName: "bridgeTypes.json",
+//   tokens: [
+//     {
+//       address: "substrate-native",
+//       name: "DOT",
+//       symbol: "DOT",
+//       resourceId: "substrate-native",
+//     },
+//   ],
+// },
+chains: [
+     {
             chainId: 0,
             networkId: 4,
+            decimals: 18,
             name: "Ethereum - Rinkeby",
             bridgeAddress: "0xE00A714D9819cb1577802493264e264a665D2030",
             erc20HandlerAddress: "0x53125EF48e1b798645553639561679D2700dA7b0",
@@ -74,6 +119,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
         {
             chainId: 1,
             networkId: 1280,
+            decimals: 18,
             name: "TestNet - MintNetwork",
             bridgeAddress: "0x45b5C191526DeC7be43AbEC26B2F5b99f00742C2",
             erc20HandlerAddress: "0x3b55137B4d4167B945281dbB7Af87dD694FBD412",
@@ -90,7 +136,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
                     resourceId:
                     "0x000000000000000000000000000000c76ebe4a02bbc34786d860b355f5a5ce00",
                 },
-            ],
-        },
-    ],
+              ],
+         },
+      ],
 };
